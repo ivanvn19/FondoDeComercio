@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-fachada-01">
+        <li class="text">fachada 01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-ingreso-01">
+        <li class="text">ingreso 01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-ingreso-02">
+        <li class="text">ingreso 02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-bao">
+        <li class="text">baño</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-acceso-a-deposito-bao-personal-2">
+        <li class="text">acceso a deposito baño personal 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-bao-adaptado">
+        <li class="text">baño adaptado</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-bao-personal">
+        <li class="text">baño personal</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-barra">
+        <li class="text">barra</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-cocina-02">
+        <li class="text">cocina 02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-cocina-03">
+        <li class="text">cocina 03</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-cocina-zona-de-frezzers">
+        <li class="text">cocina zona de frezzers</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-deposito-2">
+        <li class="text">deposito 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-deposito">
+        <li class="text">deposito</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-ingreso-a-bao-adaptado">
+        <li class="text">ingreso a baño adaptado</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-mesas-laterales-barra">
+        <li class="text">mesas laterales barra</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-patio-01">
+        <li class="text">patio 01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-patio-02">
+        <li class="text">patio 02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-patio-03">
+        <li class="text">patio 03</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-pelotero-01">
+        <li class="text">pelotero 01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-pelotero-02">
+        <li class="text">pelotero 02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-pelotero-03">
+        <li class="text">pelotero 03</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-plancha">
+        <li class="text">plancha</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-salon-atral">
+        <li class="text">salon atral</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-salon-principal-02">
+        <li class="text">salon principal 02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-salon-principal-03">
+        <li class="text">salon principal 03</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-salon-principal-04">
+        <li class="text">salon principal 04</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-salon-principal-08">
+        <li class="text">salon principal 08</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-salon-principal-09">
+        <li class="text">salon principal 09</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-salon-principal-10">
+        <li class="text">salon principal 10</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-salon-principal-11">
+        <li class="text">salon principal 11</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
